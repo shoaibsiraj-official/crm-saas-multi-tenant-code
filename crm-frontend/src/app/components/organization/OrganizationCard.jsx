@@ -19,7 +19,7 @@ export default function OrganizationCard({ data, loading, onEdit }) {
   const usagePercent = data?.seat_limit ? (data.members_count / data.seat_limit) * 100 : 0;
 
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-md transition-shadow duration-300">
+    <div className=" bg-slate-700 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-md transition-shadow duration-300">
       {/* Gradient Header */}
       <div className="h-32 bg-gradient-to-r from-brand-600 to-indigo-500 relative p-6 flex items-end">
         <div className="absolute inset-0 bg-black/10" />
@@ -44,8 +44,8 @@ export default function OrganizationCard({ data, loading, onEdit }) {
             <CreditCard className="w-5 h-5 text-blue-600 dark:text-blue-400" />
           </div>
           <div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 uppercase font-medium">Plan</p>
-            <p className="text-sm font-semibold text-slate-900 dark:text-white capitalize">{data?.subscription_plan || 'Free'}</p>
+            <p className="text-xs text-slate-500 dark:text-black uppercase font-medium">Plan</p>
+            <p className="text-sm font-semibold text-black dark:text-white capitalize">{data?.subscription_plan || 'Free'}</p>
           </div>
         </div>
 
