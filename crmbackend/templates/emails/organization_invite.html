@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Organization Invite</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:#f4f6f9; padding:30px;">
+
+  <div style="max-width:600px;margin:auto;background:white;border-radius:10px;padding:40px;">
+
+    <h2 style="margin:0;color:#111;">
+      🚀 You're invited to join {{ invite.organization.name }}
+    </h2>
+
+    <p style="margin-top:20px;color:#444;">
+      {{ inviter_name }} invited you to join as:
+    </p>
+
+    <div style="display:inline-block;padding:8px 16px;background:#111;color:white;border-radius:6px;margin:10px 0;">
+      {{ invite.role }}
+    </div>
+
+    <p style="margin-top:20px;color:#555;">
+      Click below to accept your invitation:
+    </p>
+
+    <a href="{{ accept_url }}"
+       style="display:inline-block;padding:14px 24px;background:#2563eb;color:white;text-decoration:none;border-radius:6px;margin-top:20px;">
+       Accept Invitation
+    </a>
+
+    <p style="margin-top:30px;color:#888;font-size:13px;">
+      This link expires in {{ expiry_hours }} hours.
+    </p>
+
+  </div>
+
+</body>
+</html>
